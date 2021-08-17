@@ -13,6 +13,6 @@ BEGIN
 		RAISE_APPLICATION_ERROR(-20003, 'Error: creating io_numbers for ad_orders. Updated ' || v_updated_rows || '. Expected: ' || v_expected_rows);
 	END IF;
 	
-	DBMS_OUTPUT.PUT_LINE('Successfully generated io_numbers for ' || v_updated_rows || ' transferred business ads.');
+	DBMS_OUTPUT.PUT_LINE('Successfully for ' || v_updated_rows || ' rows');
 END;
 /

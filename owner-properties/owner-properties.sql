@@ -9,3 +9,9 @@ FROM
 WHERE
     LOWER(owner_name) = LOWER('GLOBAL')
 AND LOWER(property_name) = LOWER('OrderServiceUrl');
+
+
+select * from JYBA.jyba_owner_properties op
+where op.owner_name = 'GLOBAL'
+and op.property_name like '%node%'
+;
